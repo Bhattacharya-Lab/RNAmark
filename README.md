@@ -17,7 +17,7 @@ To assess the predictive performance and complementary aspects of these methods,
 - 60 chains were selected from [PDB](https://www.rcsb.org) preserving non-redundancy with the analyzed methods.
 
 <p align="center">
-  <img src="Materials/Images/LengthDist.png" width="400" height="300"/></a> <img src="Materials/Images/Motif.png" width="350" height="300"/></a>
+  <img src="Materials/Images/LengthDist.png" width="500" height="400"/></a>
 </p>
 
 ## Evaluation metrics
