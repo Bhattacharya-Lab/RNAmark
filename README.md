@@ -1,6 +1,6 @@
 # Are RNA modeling transformers created equal? A large-scale study.
 
-by Sumit Tarafder, Rahmatullah Roche, Debswapna Bhattacharya
+by Sumit Tarafder, Rahmatullah Roche and Debswapna Bhattacharya
 
 ## RNAmark 
 **RNAmark** repository contains the predicted coordinate files (pdb) and materials related to our large scale study on four transformer based deep learning methods for RNA 3D structure prediction: 
