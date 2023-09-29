@@ -14,7 +14,7 @@ The predicted 3D structures of all four methods with and without the presence of
 ## Benchmark set
 To assess the predictive performance and complementary aspects of these methods, we created our in-house benchmark dataset (TS72) containing 72 RNA monomer chains.
 - 12 chains were taken from the most recent [CASP15](https://predictioncenter.org/casp15/index.cgi) competition. 
-- 60 chains were selected from [PDB](https://www.rcsb.org) preserving non-redundancy with the analyzed methods.
+- 60 chains were selected from [PDB](https://www.rcsb.org) preserving non-redundancy with all the analyzed methods.
 
 <p align="center">
   <img src="Data/Images/LengthDist.png" width="500" height="400"/></a>
