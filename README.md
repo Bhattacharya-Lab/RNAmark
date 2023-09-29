@@ -2,31 +2,34 @@
 
 by Sumit Tarafder, Rahmatullah Roche, Debswapna Bhattacharya
 
-submitted in PNAS
-
 ## RNAmark 
-This repository contains the predicted coordinate files (pdb) and materials related to our large scale study on four transformer based deep learning methods for RNA 3D structure prediction: DeepFoldRNA, trRosettaRNA, DRfold and RoseTTAFoldNA. To assess the predictive performance and complementary features of these methods, we created our in-house benchmark dataset containing 72 RNA monomer chains out of which 12 were taken from the most recent [CASP15](https://predictioncenter.org/casp15/index.cgi) competition and rest of the chains were collected from [PDB](https://www.rcsb.org) preserving non-redundancy with the analyzed methods. The predicted 3D structures of all four methods with and without the presence of MSA are available target-wise on [Predictions](https://github.com/Bhattacharya-Lab/RNAmark/tree/main/Predictions) folder. Experimental structures, corresponding fasta sequences and MSAs used in the analysis are available in [Materials](https://github.com/Bhattacharya-Lab/RNAmark/tree/main/Materials) folder.
+This repository contains the predicted coordinate files (pdb) and materials related to our large scale study on four transformer based deep learning methods for RNA 3D structure prediction: 
+- DeepFoldRNA
+- trRosettaRNA
+- DRfold
+- RoseTTAFoldNA
+  
+The predicted 3D structures of all four methods with and without the presence of MSA are available target-wise on [Predictions](https://github.com/Bhattacharya-Lab/RNAmark/tree/main/Predictions) folder. Experimental structures, corresponding fasta sequences and MSAs used in the analysis are available in [Materials](https://github.com/Bhattacharya-Lab/RNAmark/tree/main/Materials) folder.
+
+## Benchmark set
+To assess the predictive performance and complementary aspects of these methods, we created our in-house benchmark dataset containing 72 RNA monomer chains.
+- 12 chains were taken from the most recent [CASP15](https://predictioncenter.org/casp15/index.cgi) competition 
+- 60 chains were selected from [PDB](https://www.rcsb.org) preserving non-redundancy with the analyzed methods. 
 
 ## Evaluation metrics
 We have used the following set of assessment metrics as part of our study.
-- Template Modeling Score (TMscore)
-- Local Distance Difference Test (lDDT)
-- Interaction Network Fidelity (INF)
-- Clash score
-
-### Metrics source
-- TMscore is evaluated using US-align software downloaded from [Source](https://zhanggroup.org/TM-score/).
-- lDDT is claculated using the docker image obtained from the OpenStructure registry [Source](https://git.scicore.unibas.ch/schwede/openstructure/-/tree/master/docker).
-- INF score is evaluated using the casp-rna pipeline available in the GitHub repository [Source](https://github.com/DasLab/casp-rna). 
-- Clash score is evaluated using MolProbity available in the following GitHub Repositry [Source](https://github.com/rlabduke/MolProbity).
+- Template Modeling Score (**TM-score**) using [US-align](https://zhanggroup.org/TM-score/).
+- Local Distance Difference Test (**lDDT**) calculated via the docker image obtained from the [OpenStructure registry](https://git.scicore.unibas.ch/schwede/openstructure/-/tree/master/docker).
+- Interaction Network Fidelity (**INF**) score evaluated using the casp-rna pipeline available in this [GitHub repository](https://github.com/DasLab/casp-rna).
+- **Clash score** from MolProbity available to be locally installed from this [GitHub Repositry](https://github.com/rlabduke/MolProbity).
 
 ## Prediction scores
-- [TMscore](#tmscore)
+- [TM-score](#tmscore)
 - [lDDT](#lDDT)
 - [INF](#inf)
 - [Clash-score](#clash-score)
 
-## TMScore 
+## TM-score 
 
 |Targets|DeepFoldRNA|trRosettaRNA|DRfold|RoseTTAFoldNA|
 |:---:|:---:|:---:|:---:|:---:|
@@ -341,4 +344,5 @@ We have used the following set of assessment metrics as part of our study.
 |R1190|148.38|29.78|355.28|37.55|
 | | | | | |
 |Mean|167.08|27.39|175.21|45.88|
+
 
