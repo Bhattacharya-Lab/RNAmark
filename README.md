@@ -1,4 +1,4 @@
-# Are RNA modeling transformers created equal? A large-scale study.
+# Are RNA 3D modeling transformers created equal? A large-scale study.
 
 by Sumit Tarafder, Rahmatullah Roche and Debswapna Bhattacharya
 
