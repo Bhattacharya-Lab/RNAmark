@@ -12,7 +12,7 @@ by Sumit Tarafder, Rahmatullah Roche, Debswapna Bhattacharya
 The predicted 3D structures of all four methods with and without multiple sequence alignment (MSA) are available target-wise under [Predictions](https://github.com/Bhattacharya-Lab/RNAmark/tree/main/Predictions). Experimental structures, corresponding fasta sequences, and MSAs used in the analysis are available under [Data](https://github.com/Bhattacharya-Lab/RNAmark/tree/main/Data).
 
 ## Benchmark set
-To evaluate the predictive performance of these methods, we used a large benchmark dataset containing 72 RNA targets.
+To evaluate the predictive performance of these methods, we used a large benchmark dataset containing 72 RNA targets (TS72).
 - 12 targets were taken from [CASP15](https://predictioncenter.org/casp15/index.cgi). 
 - 60 non-redundant targets were curated from [PDB](https://www.rcsb.org).
 
