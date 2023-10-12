@@ -4,10 +4,10 @@ by Sumit Tarafder, Rahmatullah Roche, Debswapna Bhattacharya
 
 ## RNAmark 
 **RNAmark** repository contains the predicted coordinate files (pdb) and materials related to our large scale study on four transformer based deep learning methods for RNA 3D structure prediction: 
-- DeepFoldRNA
-- trRosettaRNA
-- DRfold
-- RoseTTAFoldNA
+- [DeepFoldRNA](https://github.com/robpearc/DeepFoldRNA/)
+- [trRosettaRNA](https://yanglab.nankai.edu.cn/trRosettaRNA/)
+- [DRfold](https://zhanggroup.org/DRfold/)
+- [RoseTTAFoldNA](https://github.com/uw-ipd/RoseTTAFold2NA/)
   
 The predicted 3D structures of all four methods with and without the presence of MSA are available target-wise on [Predictions](https://github.com/Bhattacharya-Lab/RNAmark/tree/main/Predictions) folder. Experimental structures, corresponding fasta sequences, and MSAs used in the analysis are available in [Materials](https://github.com/Bhattacharya-Lab/RNAmark/tree/main/Materials) folder.
 
