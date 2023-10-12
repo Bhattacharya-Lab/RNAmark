@@ -1,6 +1,6 @@
-# Are RNA 3D modeling transformers created equal? A large-scale study.
+## Are RNA 3D modeling transformers created equal? A large-scale study.
 
-by Sumit Tarafder, Rahmatullah Roche and Debswapna Bhattacharya
+by Sumit Tarafder, Rahmatullah Roche, Debswapna Bhattacharya
 
 ## RNAmark 
 **RNAmark** repository contains the predicted coordinate files (pdb) and materials related to our large scale study on four transformer based deep learning methods for RNA 3D structure prediction: 
@@ -9,23 +9,23 @@ by Sumit Tarafder, Rahmatullah Roche and Debswapna Bhattacharya
 - DRfold
 - RoseTTAFoldNA
   
-The predicted 3D structures of all four methods with and without the presence of MSA are available target-wise on [Predictions](https://github.com/Bhattacharya-Lab/RNAmark/tree/main/Predictions) folder. Experimental structures, corresponding fasta sequences and MSAs used in the analysis are available in [Materials](https://github.com/Bhattacharya-Lab/RNAmark/tree/main/Materials) folder.
+The predicted 3D structures of all four methods with and without the presence of MSA are available target-wise on [Predictions](https://github.com/Bhattacharya-Lab/RNAmark/tree/main/Predictions) folder. Experimental structures, corresponding fasta sequences, and MSAs used in the analysis are available in [Materials](https://github.com/Bhattacharya-Lab/RNAmark/tree/main/Materials) folder.
 
 ## Benchmark set
-To assess the predictive performance and complementary aspects of these methods, we created our in-house benchmark dataset (TS72) containing 72 RNA monomer chains.
-- 12 chains were taken from the most recent [CASP15](https://predictioncenter.org/casp15/index.cgi) competition. 
-- 60 chains were selected from [PDB](https://www.rcsb.org) preserving non-redundancy with the analyzed methods.
+To assess the predictive performance of these methods, we used a large benchmark dataset containing 72 RNA targets.
+- 12 targets were taken from [CASP15](https://predictioncenter.org/casp15/index.cgi). 
+- 60 non-redundant targets were selected from [PDB](https://www.rcsb.org).
 
 <p align="center">
   <img src="Data/Images/LengthDist.png" width="500" height="400"/></a>
 </p>
 
 ## Evaluation metrics
-We have used the following set of assessment metrics as part of our study.
+We used the following set of assessment metrics as part of our study.
 - Template Modeling Score (**TM-score**) using [US-align](https://zhanggroup.org/US-align/).
 - Local Distance Difference Test (**lDDT**) calculated via the docker image obtained from [OpenStructure registry](https://git.scicore.unibas.ch/schwede/openstructure/-/tree/master/docker).
-- Interaction Network Fidelity (**INF**) score evaluated using the casp-rna pipeline available in this [GitHub repository](https://github.com/DasLab/casp-rna).
-- **Clash score** from MolProbity available to be locally installed from this [GitHub Repositry](https://github.com/rlabduke/MolProbity).
+- Interaction Network Fidelity (**INF**) score evaluated using the casp-rna pipeline available [here](https://github.com/DasLab/casp-rna).
+- **Clash score** from MolProbity package available [here](https://github.com/rlabduke/MolProbity).
 
 ## Prediction scores per method
 - [DeepFoldRNA](#deepfoldrna)
