@@ -3,7 +3,7 @@
 by Sumit Tarafder, Rahmatullah Roche, Debswapna Bhattacharya
 
 ## RNAmark 
-**RNAmark** repository contains the predicted coordinate files (pdb) and materials related to our large scale study on four transformer based deep learning methods for RNA 3D structure prediction: 
+**RNAmark** repository contains the materials related to our large scale study on four transformer based deep learning methods for RNA 3D structure prediction: 
 - [DeepFoldRNA](https://github.com/robpearc/DeepFoldRNA/)
 - [trRosettaRNA](https://yanglab.nankai.edu.cn/trRosettaRNA/)
 - [DRfold](https://zhanggroup.org/DRfold/)
