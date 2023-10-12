@@ -9,7 +9,7 @@ by Sumit Tarafder, Rahmatullah Roche, Debswapna Bhattacharya
 - [DRfold](https://zhanggroup.org/DRfold/)
 - [RoseTTAFoldNA](https://github.com/uw-ipd/RoseTTAFold2NA/)
   
-The predicted 3D structures of all four methods with and without the presence of MSA are available target-wise on [Predictions](https://github.com/Bhattacharya-Lab/RNAmark/tree/main/Predictions) folder. Experimental structures, corresponding fasta sequences, and MSAs used in the analysis are available in [Materials](https://github.com/Bhattacharya-Lab/RNAmark/tree/main/Materials) folder.
+The predicted 3D structures of all four methods with and without the presence of MSA are available target-wise on [Predictions](https://github.com/Bhattacharya-Lab/RNAmark/tree/main/Predictions) folder. Experimental structures, corresponding fasta sequences, and MSAs used in the analysis are available in [Data](https://github.com/Bhattacharya-Lab/RNAmark/tree/main/Data) folder.
 
 ## Benchmark set
 To assess the predictive performance of these methods, we used a large benchmark dataset containing 72 RNA targets.
