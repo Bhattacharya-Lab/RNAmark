@@ -1,4 +1,4 @@
-# Emerging methods in RNA 3D structure prediction with transformer neural networks: unity in diversity
+## Benchmarking emerging methods in RNA 3D structure prediction with transformer neural networks
 
 by Sumit Tarafder, Rahmatullah Roche, Debswapna Bhattacharya
 
