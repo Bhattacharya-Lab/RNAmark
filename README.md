@@ -1,4 +1,4 @@
-## Are RNA 3D modeling transformers created equal? A large-scale study.
+## Emerging methods in RNA 3D structure prediction with transformer neural networks: unity in diversity
 
 by Sumit Tarafder, Rahmatullah Roche, Debswapna Bhattacharya
 
