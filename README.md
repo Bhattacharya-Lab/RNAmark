@@ -1,4 +1,4 @@
-## Benchmarking emerging methods in RNA 3D structure prediction with transformer neural networks
+## Are RNA 3D modeling transformers created equal?
 
 by Sumit Tarafder, Rahmatullah Roche, Debswapna Bhattacharya
 
