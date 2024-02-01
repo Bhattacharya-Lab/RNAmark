@@ -3,13 +3,14 @@
 by Sumit Tarafder, Rahmatullah Roche, Debswapna Bhattacharya
 
 ## RNAmark 
-**RNAmark** repository contains the materials related to our large scale study on four transformer based deep learning methods for RNA 3D structure prediction: 
+**RNAmark** repository contains the materials related to our large scale study on five transformer based deep learning methods for RNA 3D structure prediction: 
 - [DeepFoldRNA](https://github.com/robpearc/DeepFoldRNA/)
 - [trRosettaRNA](https://yanglab.nankai.edu.cn/trRosettaRNA/)
 - [DRfold](https://zhanggroup.org/DRfold/)
 - [RoseTTAFoldNA](https://github.com/uw-ipd/RoseTTAFold2NA/)
+- [RhoFold](https://github.com/ml4bio/RhoFold/)
   
-The predicted 3D structures of all four methods with and without multiple sequence alignment (MSA) are available target-wise under [Predictions](https://github.com/Bhattacharya-Lab/RNAmark/tree/main/Predictions). Experimental structures, corresponding fasta sequences, and MSAs used in the analysis are available under [Data](https://github.com/Bhattacharya-Lab/RNAmark/tree/main/Data).
+The predicted 3D structures of all five methods with and without multiple sequence alignment (MSA) are available target-wise under [Predictions](https://github.com/Bhattacharya-Lab/RNAmark/tree/main/Predictions). Experimental structures, corresponding fasta sequences, and MSAs used in the analysis are available under [Data](https://github.com/Bhattacharya-Lab/RNAmark/tree/main/Data).
 
 ## Benchmark set
 To evaluate the predictive performance of these methods, we used a large benchmark dataset containing 72 RNA targets (TS72).
@@ -32,6 +33,7 @@ We used the following set of assessment metrics as part of our study.
 - [trRosettaRNA](#trrosettarna)
 - [DRfold](#drfold)
 - [RoseTTAFoldNA](#rosettafoldna)
+- [RhoFold](#rhofold)
 
 ## DeepFoldRNA
 
@@ -348,3 +350,82 @@ We used the following set of assessment metrics as part of our study.
 |R1190|0.25|0.57|0.72|37.55|
 | | | | | |
 |Mean|0.38|0.61|0.76|45.88|
+
+## RhoFold
+
+| Targets | TM-score | lDDT | INF  | Clash-score |
+| ------- | -------- | ---- | ---- | ----------- |
+| 6YMC_A  | 0.49     | 0.8  | 0.96 | 442         |
+| 7ECM_A  | 0.31     | 0.69 | 0.79 | 466.84      |
+| 7EDL_A  | 0.34     | 0.79 | 0.94 | 505.08      |
+| 7EDM_A  | 0.31     | 0.8  | 0.91 | 431.46      |
+| 7EEM_A  | 0.56     | 0.81 | 0.93 | 507.92      |
+| 7EFG_A  | 0.31     | 0.74 | 0.92 | 479.81      |
+| 7EQJ_A  | 0.76     | 0.78 | 0.9  | 435.57      |
+| 7EXY_A  | 0.23     | 0.55 | 0.85 | 478.87      |
+| 7KUB_A  | 0.33     | 0.55 | 0.72 | 565.03      |
+| 7KUC_A  | 0.35     | 0.73 | 0.87 | 524.27      |
+| 7KUD_A  | 0.31     | 0.72 | 0.75 | 447.37      |
+| 7KVT_B  | 0.68     | 0.66 | 0.72 | 495.11      |
+| 7MLW_F  | 0.82     | 0.7  | 0.77 | 454.69      |
+| 7Q48_A  | 0.11     | 0.22 | 0.42 | 465.44      |
+| 7Q6L_A  | 0.11     | 0.23 | 0.34 | 461.1       |
+| 7Q7X_B  | 0.24     | 0.75 | 1    | 514.02      |
+| 7Q7X_C  | 0.32     | 0.6  | 0.88 | 565.5       |
+| 7QA2_A  | 0.13     | 0.23 | 0.38 | 506.28      |
+| 7QDU_Q  | 0.06     | 0.29 | 0.02 | 65.59       |
+| 7QP2_A  | 0.68     | 0.84 | 0.92 | 519.46      |
+| 7R6L_A  | 0.46     | 0.46 | 0.72 | 777.45      |
+| 7R6L_B  | 0.14     | 0.42 | 0.54 | 562.41      |
+| 7R6M_A  | 0.4      | 0.43 | 0.67 | 730.32      |
+| 7RQ5_A  | 0.27     | 0.44 | 0.76 | 503.28      |
+| 7RWR_A  | 0.38     | 0.51 | 0.8  | 467.84      |
+| 7SHX_A  | 0.19     | 0.47 | 0.68 | 477.43      |
+| 7UCR_A  | 0.74     | 0.85 | 0.92 | 507.6       |
+| 7UGA_A  | 0.42     | 0.64 | 0.8  | 571.85      |
+| 7UMC_A  | 0.37     | 0.66 | 0.83 | 419.65      |
+| 7UMD_A  | 0.3      | 0.57 | 0.8  | 473.06      |
+| 7UME_A  | 0.33     | 0.66 | 0.88 | 425.17      |
+| 7UQ6_B  | 0.62     | 0.74 | 0.8  | 479.02      |
+| 7UVT_A  | 0.42     | 0.48 | 0.74 | 624.84      |
+| 7UZ0_A  | 0.73     | 0.77 | 0.88 | 486.44      |
+| 7V06_A  | 0.35     | 0.66 | 0.8  | 454.48      |
+| 7V9E_A  | 0.62     | 0.71 | 0.86 | 449.9       |
+| 7VFT_A  | 0.19     | 0.71 | 0.75 | 504.8       |
+| 7WIA_V  | 0.35     | 0.63 | 0.81 | 455.19      |
+| 7XD3_N  | 0.43     | 0.45 | 0.68 | 669.36      |
+| 7XJZ_B  | 0.78     | 0.73 | 0.83 | 446.84      |
+| 7XK0_B  | 0.81     | 0.74 | 0.82 | 440.24      |
+| 7XSN_N  | 0.44     | 0.48 | 0.75 | 631.33      |
+| 7YC8_N  | 0.42     | 0.46 | 0.7  | 738.82      |
+| 7YGC_N  | 0.41     | 0.46 | 0.69 | 762.75      |
+| 8BGU_3  | 0.64     | 0.7  | 0.84 | 504.55      |
+| 8D2A_A  | 0.28     | 0.66 | 0.83 | 433.82      |
+| 8DMB_W  | 0.31     | 0.43 | 0.69 | 608.81      |
+| 8DP3_R  | 0.31     | 0.61 | 0.83 | 389.85      |
+| 8E0F_D  | 0.32     | 0.82 | 0.95 | 440.32      |
+| 8EG0_C  | 0.67     | 0.72 | 0.86 | 434.78      |
+| 8F4O_B  | 0.55     | 0.66 | 0.8  | 465.75      |
+| 8FCS_A  | 0.69     | 0.74 | 0.88 | 401.72      |
+| 8GXC_A  | 0.22     | 0.4  | 0.45 | 716.79      |
+| 8HB8_A  | 0.23     | 0.4  | 0.51 | 595.38      |
+| 8HBA_A  | 0.29     | 0.4  | 0.52 | 592.47      |
+| 8HBA_B  | 0.3      | 0.4  | 0.54 | 593.77      |
+| 8HD6_N  | 0.44     | 0.46 | 0.69 | 627.91      |
+| 8I3Z_B  | 0.15     | 0.34 | 0.55 | 703.11      |
+| 8I43_A  | 0.11     | 0.66 | 0.72 | 461.93      |
+| 8I7N_N  | 0.44     | 0.44 | 0.67 | 637.06      |
+| R1107   | 0.37     | 0.5  | 0.68 | 566.14      |
+| R1108   | 0.44     | 0.66 | 0.87 | 476.1       |
+| R1116   | 0.53     | 0.62 | 0.8  | 444.77      |
+| R1117   | 0.25     | 0.53 | 0.69 | 509.39      |
+| R1126   | 0.07     | 0.32 | 0.03 | 41.83       |
+| R1128   | 0.34     | 0.6  | 0.74 | 531.13      |
+| R1136   | 0.07     | 0.29 | 0.04 | 139.17      |
+| R1138   | 0.05     | 0.26 | 0.02 | 123.8       |
+| R1149   | 0.33     | 0.57 | 0.84 | 532.1       |
+| R1156   | 0.34     | 0.61 | 0.82 | 499.04      |
+| R1189   | 0.19     | 0.5  | 0.63 | 509.37      |
+| R1190   | 0.23     | 0.55 | 0.64 | 509.37      |
+|         |          |      |      |             |
+| Mean    | 0.38     | 0.58 | 0.72 | 498.36      |
