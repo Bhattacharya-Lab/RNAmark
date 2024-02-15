@@ -3,8 +3,6 @@
 input="TS72.txt"
 toolname=$1
 
-counter=0
-
 rm Score.csv
 
 while IFS= read -r line
@@ -75,7 +73,5 @@ do
     #Parse all the metrics
     #====================================================
     python3 parse.py $PDBID
-
-    counter=$((counter+1))
 
 done < "$input"
