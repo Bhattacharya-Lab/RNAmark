@@ -36,7 +36,7 @@ cd Evaluation
 chmod a+x evaluation.sh
 ./evaluate.sh DeepFoldRNA
 ```
-- Table of results will be available in Script.csv file.
+- Table of results will be available in [Score.csv](https://github.com/Bhattacharya-Lab/RNAmark/blob/main/Evaluation/Score.csv) file.
   
 ## Prediction scores per method
 - [DeepFoldRNA](#deepfoldrna)
