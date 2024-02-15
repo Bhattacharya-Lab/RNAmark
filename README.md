@@ -34,7 +34,7 @@ We used the following set of assessment metrics as part of our study.
 ```
 cd Evaluation
 chmod a+x evaluation.sh
-./evaluation.sh DeepFoldRNA
+./evaluate.sh DeepFoldRNA
 ```
 
 ## Prediction scores per method
