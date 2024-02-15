@@ -1,0 +1,24 @@
+
+ ********************************************************************
+ * US-align (Version 20230609)                                      *
+ * Universal Structure Alignment of Proteins and Nucleic Acids      *
+ * Reference: C Zhang, M Shine, AM Pyle, Y Zhang. (2022) Nat Methods*
+ * Please email comments and suggestions to zhang@zhanggroup.org    *
+ ********************************************************************
+
+Name of Structure_1: Prediction/6YMC_A_DeepFoldRNA.pdb:A (to be superimposed onto Structure_2)
+Name of Structure_2: Native/6YMC_A_native.pdb:A
+Length of Structure_1: 26 residues
+Length of Structure_2: 26 residues
+
+Aligned length= 26, RMSD=   1.34, Seq_ID=n_identical/n_aligned= 1.000
+TM-score= 0.48300 (normalized by length of Structure_1: L=26, d0=0.70)
+TM-score= 0.48300 (normalized by length of Structure_2: L=26, d0=0.70)
+(You should use TM-score normalized by length of the reference structure)
+
+(":" denotes residue pairs of d < 5.0 Angstrom, "." denotes other aligned residues)
+ucucugguuaggaaacuaacuaggga
+::::::::::::::::::::::::::
+ucucugguuaggaaacuaacuaggga
+
+#Total CPU time is  0.00 seconds

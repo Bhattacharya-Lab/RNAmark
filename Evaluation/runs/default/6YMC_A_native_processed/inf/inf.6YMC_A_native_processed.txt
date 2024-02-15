@@ -1,0 +1,2 @@
+target,fn,inf_all,inf_stack,inf_WC,inf_nWC,sns_WC,ppv_WC,sns_nWC,ppv_nWC
+6YMC_A_native_processed.pdb,6YMC_A_DeepFoldRNA_processed.pdb,0.34,0.45,0.0,0.0,0.0,0.0,0.0,0.0

@@ -1,0 +1,244 @@
+{
+    "reference_chains": [
+        "A"
+    ],
+    "model_chains": [
+        "A"
+    ],
+    "chem_groups": [
+        [
+            "A"
+        ]
+    ],
+    "chem_mapping": [
+        [
+            "A"
+        ]
+    ],
+    "chain_mapping": {
+        "A": "A"
+    },
+    "aln": [
+        ">reference:A\nGGGCCCGGACCC\nmodel:A\nGGGCCCGGACCC"
+    ],
+    "inconsistent_residues": [],
+    "lddt": 0.6919175544233441,
+    "model_clashes": [
+        {
+            "a1": "A.1..OP2",
+            "a2": "A.2..OP2",
+            "dist": 0.6005704998970032,
+            "tolerated_dist": 1.54
+        },
+        {
+            "a1": "A.3..C6",
+            "a2": "A.4..C4",
+            "dist": 1.3547085523605347,
+            "tolerated_dist": 1.9
+        },
+        {
+            "a1": "A.3..N1",
+            "a2": "A.4..C5",
+            "dist": 1.5667201280593872,
+            "tolerated_dist": 1.75
+        },
+        {
+            "a1": "A.3..N1",
+            "a2": "A.4..N3",
+            "dist": 1.0843955278396606,
+            "tolerated_dist": 1.6
+        },
+        {
+            "a1": "A.3..N1",
+            "a2": "A.4..C4",
+            "dist": 0.24895554780960083,
+            "tolerated_dist": 1.75
+        },
+        {
+            "a1": "A.3..N1",
+            "a2": "A.4..N4",
+            "dist": 1.4647912979125977,
+            "tolerated_dist": 1.6
+        },
+        {
+            "a1": "A.3..C2",
+            "a2": "A.4..N3",
+            "dist": 0.49790140986442566,
+            "tolerated_dist": 1.75
+        },
+        {
+            "a1": "A.3..C2",
+            "a2": "A.4..C4",
+            "dist": 1.608022928237915,
+            "tolerated_dist": 1.9
+        },
+        {
+            "a1": "A.3..C2",
+            "a2": "A.4..C2",
+            "dist": 1.2359801530838013,
+            "tolerated_dist": 1.9
+        },
+        {
+            "a1": "A.3..N3",
+            "a2": "A.4..N3",
+            "dist": 1.3167566061019897,
+            "tolerated_dist": 1.6
+        },
+        {
+            "a1": "A.3..N3",
+            "a2": "A.4..C2",
+            "dist": 1.2775330543518066,
+            "tolerated_dist": 1.75
+        },
+        {
+            "a1": "A.3..N3",
+            "a2": "A.4..O2",
+            "dist": 1.3480361700057983,
+            "tolerated_dist": 1.5700000000000003
+        },
+        {
+            "a1": "A.5..O3'",
+            "a2": "A.6..OP1",
+            "dist": 0.916731059551239,
+            "tolerated_dist": 1.54
+        },
+        {
+            "a1": "A.5..C5",
+            "a2": "A.6..N4",
+            "dist": 1.6485509872436523,
+            "tolerated_dist": 1.75
+        },
+        {
+            "a1": "A.5..C6",
+            "a2": "A.6..C5",
+            "dist": 1.7494385242462158,
+            "tolerated_dist": 1.9
+        },
+        {
+            "a1": "A.6..C1'",
+            "a2": "A.7..N2",
+            "dist": 1.4120479822158813,
+            "tolerated_dist": 1.75
+        },
+        {
+            "a1": "A.6..N1",
+            "a2": "A.7..N2",
+            "dist": 0.7065308690071106,
+            "tolerated_dist": 1.6
+        },
+        {
+            "a1": "A.6..N1",
+            "a2": "A.7..C2",
+            "dist": 1.5335116386413574,
+            "tolerated_dist": 1.75
+        },
+        {
+            "a1": "A.6..C5",
+            "a2": "A.7..N1",
+            "dist": 0.9921485185623169,
+            "tolerated_dist": 1.75
+        },
+        {
+            "a1": "A.6..C5",
+            "a2": "A.7..C2",
+            "dist": 1.573867678642273,
+            "tolerated_dist": 1.9
+        },
+        {
+            "a1": "A.6..C6",
+            "a2": "A.7..N2",
+            "dist": 0.9507327079772949,
+            "tolerated_dist": 1.75
+        },
+        {
+            "a1": "A.6..C6",
+            "a2": "A.7..N1",
+            "dist": 1.3735519647598267,
+            "tolerated_dist": 1.75
+        },
+        {
+            "a1": "A.6..C6",
+            "a2": "A.7..C2",
+            "dist": 0.8640580773353577,
+            "tolerated_dist": 1.9
+        }
+    ],
+    "model_bad_bonds": [
+        {
+            "a1": "A.6..C1'",
+            "a2": "A.6..N1",
+            "length": 1.3593446016311646,
+            "exp_length": 1.487,
+            "std": 0.01
+        },
+        {
+            "a1": "A.12..C1'",
+            "a2": "A.12..N1",
+            "length": 1.3199414014816284,
+            "exp_length": 1.487,
+            "std": 0.01
+        },
+        {
+            "a1": "A.1..C1'",
+            "a2": "A.1..N9",
+            "length": 1.8163772821426392,
+            "exp_length": 1.458,
+            "std": 0.01
+        },
+        {
+            "a1": "A.9..C1'",
+            "a2": "A.9..N9",
+            "length": 1.3320773839950562,
+            "exp_length": 1.458,
+            "std": 0.01
+        }
+    ],
+    "model_bad_angles": [
+        {
+            "a1": "A.1..O4'",
+            "a2": "A.1..C1'",
+            "a3": "A.1..N9",
+            "angle": 90.27405701473575,
+            "exp_angle": 108.477,
+            "std": 1.5
+        },
+        {
+            "a1": "A.5..O3'",
+            "a2": "A.6..P",
+            "a3": "A.6..OP1",
+            "angle": 33.15356064632347,
+            "exp_angle": 108.0,
+            "std": 3.0
+        },
+        {
+            "a1": "A.5..O3'",
+            "a2": "A.6..P",
+            "a3": "A.6..OP2",
+            "angle": 148.84293597778426,
+            "exp_angle": 108.0,
+            "std": 3.0
+        },
+        {
+            "a1": "A.5..O3'",
+            "a2": "A.6..P",
+            "a3": "A.6..O5'",
+            "angle": 83.29764032478221,
+            "exp_angle": 104.0,
+            "std": 1.5
+        }
+    ],
+    "reference_clashes": [],
+    "reference_bad_bonds": [],
+    "reference_bad_angles": [],
+    "model": "/mod/7ECM_A_DeepFoldRNA.pdb",
+    "reference": "/ref/7ECM_A_native.pdb",
+    "fault_tolerant": false,
+    "model_biounit": null,
+    "reference_biounit": null,
+    "residue_number_alignment": false,
+    "enforce_consistency": false,
+    "cad_exec": null,
+    "usalign_exec": null,
+    "lddt_no_stereochecks": true,
+    "status": "SUCCESS"
+}
