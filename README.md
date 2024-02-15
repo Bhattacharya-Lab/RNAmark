@@ -28,6 +28,15 @@ We used the following set of assessment metrics as part of our study.
 - Interaction Network Fidelity (**INF**) score evaluated using the casp-rna pipeline available [here](https://github.com/DasLab/casp-rna).
 - **Clash score** from MolProbity package available [here](https://github.com/rlabduke/MolProbity).
 
+## Evaluation Scripts
+
+- After installation of above tools, change the paths in evaluations.sh in [Evaluation](https://github.com/Bhattacharya-Lab/RNAmark/tree/main/Evaluation) folder and run the following command to generate tables of metrics per method:
+```
+cd Evaluation
+chmod a+x evaluation.sh
+./evaluation.sh DeepFoldRNA
+```
+
 ## Prediction scores per method
 - [DeepFoldRNA](#deepfoldrna)
 - [trRosettaRNA](#trrosettarna)
