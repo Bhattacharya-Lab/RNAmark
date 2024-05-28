@@ -1,4 +1,4 @@
-## Are RNA 3D modeling transformers created equal?
+## The landscape of RNA 3D structure modeling with transformer networks
 
 by Sumit Tarafder, Rahmatullah Roche, Debswapna Bhattacharya
 
