@@ -3,17 +3,18 @@
 by Sumit Tarafder, Rahmatullah Roche, Debswapna Bhattacharya
 
 ## RNAmark 
-**RNAmark** repository contains the materials related to our large scale study on five transformer based deep learning methods for RNA 3D structure prediction: 
+**RNAmark** repository contains the materials related to our large scale study on five transformer based deep learning methods as well as one non deep learning based method for RNA 3D structure prediction: 
 - [DeepFoldRNA](https://github.com/robpearc/DeepFoldRNA/)
 - [trRosettaRNA](https://yanglab.nankai.edu.cn/trRosettaRNA/)
 - [DRfold](https://zhanggroup.org/DRfold/)
 - [RoseTTAFoldNA](https://github.com/uw-ipd/RoseTTAFold2NA/)
 - [RhoFold](https://github.com/ml4bio/RhoFold/)
+- [RNAComposer](https://rnacomposer.cs.put.poznan.pl)
   
-The predicted 3D structures of all five methods with and without multiple sequence alignment (MSA) are available target-wise under [Predictions](https://github.com/Bhattacharya-Lab/RNAmark/tree/main/Predictions). Experimental structures, corresponding fasta sequences, and MSAs used in the analysis are available under [Data](https://github.com/Bhattacharya-Lab/RNAmark/tree/main/Data).
+The predicted 3D structures of all the methods with and without multiple sequence alignment (MSA) are available target-wise under [Predictions](https://github.com/Bhattacharya-Lab/RNAmark/tree/main/Predictions). Experimental structures, corresponding fasta sequences, and MSAs used in the analysis are available under [Data](https://github.com/Bhattacharya-Lab/RNAmark/tree/main/Data).
 
 ## Benchmark set
-To evaluate the predictive performance of these methods, we used a large benchmark dataset containing 72 RNA targets (TS72).
+To evaluate the predictive performance of these methods, we used a newly curated benchmark dataset containing 72 RNA targets (TS72).
 - 12 targets were taken from [CASP15](https://predictioncenter.org/casp15/index.cgi). 
 - 60 non-redundant targets were curated from [PDB](https://www.rcsb.org).
 
@@ -30,7 +31,7 @@ We used the following set of assessment metrics as part of our study.
 
 ## Evaluation Scripts
 
-- After installation of above tools, change the paths in evaluations.sh in [Evaluation](https://github.com/Bhattacharya-Lab/RNAmark/tree/main/Evaluation) folder and run the following command to generate tables of metrics per method:
+- After installation of above tools, change the paths in evaluations.sh in [Evaluation](https://github.com/Bhattacharya-Lab/RNAmark/tree/main/Evaluation) folder and run the following command to generate a table of metrics per method. Change the method name in the argument as needed.
 ```
 cd Evaluation
 chmod a+x evaluation.sh
@@ -44,6 +45,7 @@ chmod a+x evaluation.sh
 - [DRfold](#drfold)
 - [RoseTTAFoldNA](#rosettafoldna)
 - [RhoFold](#rhofold)
+- [RNAComposer](#rnacomposer)
 
 ## DeepFoldRNA
 
@@ -439,3 +441,80 @@ chmod a+x evaluation.sh
 | R1190   | 0.23     | 0.55 | 0.64 | 509.37      |
 |         |          |      |      |             |
 | Mean    | 0.38     | 0.58 | 0.72 | 498.36      |
+
+## RNAComposer
+
+|Targets|TM-score|lDDT|INF |Clash-score|
+|-------|--------|----|----|-----------|
+|6YMC_A |0.38    |0.82|0.92|23.95      |
+|7ECM_A |0.17    |0.56|0.53|12.89      |
+|7EDL_A |0.18    |0.58|0.44|13.55      |
+|7EDM_A |0.11    |0.66|0.71|20.35      |
+|7EEM_A |0.28    |0.55|0.7 |20.62      |
+|7EFG_A |0.17    |0.46|0.47|17.6       |
+|7EQJ_A |0.23    |0.29|0.47|21.29      |
+|7EXY_A |0.15    |0.51|0.76|7.91       |
+|7KUB_A |0.39    |0.62|0.83|16.1       |
+|7KUC_A |0.33    |0.69|0.83|15.3       |
+|7KUD_A |0.2     |0.66|0.89|7.18       |
+|7KVT_B |0.22    |0.33|0.43|20.6       |
+|7MLW_F |0.37    |0.54|0.39|12.59      |
+|7Q48_A |0.12    |0.21|0.49|16.76      |
+|7Q6L_A |0.03    |0.22|0.4 |19.47      |
+|7Q7X_B |0.09    |0.67|0.79|18.21      |
+|7Q7X_C |0.21    |0.52|0.62|11.6       |
+|7QA2_A |0.07    |0.2 |0.44|16.57      |
+|7QP2_A |0.25    |0.57|0.61|20.62      |
+|7R6L_A |0.14    |0.35|0.4 |18.05      |
+|7R6L_B |0.1     |0.5 |0.53|27.14      |
+|7R6M_A |0.21    |0.35|0.47|68.71      |
+|7RQ5_A |0.22    |0.63|0.76|17.86      |
+|7RWR_A |0.3     |0.51|0.74|19.67      |
+|7SHX_A |0.2     |0.5 |0.66|18.74      |
+|7UCR_A |0.26    |0.56|0.72|20.62      |
+|7UGA_A |0.32    |0.53|0.71|15.21      |
+|7UMC_A |0.22    |0.61|0.85|15.53      |
+|7UMD_A |0.23    |0.61|0.81|18.59      |
+|7UME_A |0.29    |0.65|0.88|17.72      |
+|7UQ6_B |0.2     |0.5 |0.3 |20.58      |
+|7UVT_A |0.2     |0.42|0.38|57.23      |
+|7UZ0_A |0.2     |0.44|0.32|22.44      |
+|7V06_A |0.29    |0.6 |0.78|18.99      |
+|7V9E_A |0.25    |0.54|0.72|18.29      |
+|7VFT_A |0.17    |0.67|0.62|14.71      |
+|7WIA_V |0.43    |0.72|0.51|17.36      |
+|7XD3_N |0.23    |0.42|0.63|58.66      |
+|7XJZ_B |0.23    |0.47|0.32|24.46      |
+|7XK0_B |0.24    |0.47|0.31|24.46      |
+|7XSN_N |0.18    |0.42|0.7 |20.13      |
+|7YC8_N |0.14    |0.4 |0.38|18.05      |
+|7YGC_N |0.14    |0.41|0.69|18.05      |
+|8BGU_3 |0.52    |0.6 |0.79|12.63      |
+|8D2A_A |0.27    |0.62|0.74|15.01      |
+|8DMB_W |0.13    |0.33|0.42|20.34      |
+|8DP3_R |0.28    |0.59|0.87|21.91      |
+|8E0F_D |0.14    |0.57|0.5 |12.67      |
+|8EG0_C |0.21    |0.48|0.47|23.84      |
+|8F4O_B |0.17    |0.32|0.39|14.98      |
+|8FCS_A |0.51    |0.73|0.85|17.11      |
+|8GXC_A |0.12    |0.22|0.47|20.9       |
+|8HB8_A |0.18    |0.26|0.48|15.15      |
+|8HBA_A |0.15    |0.27|0.33|16         |
+|8HBA_B |0.16    |0.26|0.39|16         |
+|8HD6_N |0.21    |0.43|0.65|34.44      |
+|8I3Z_B |0.13    |0.33|0.4 |14.93      |
+|8I43_A |0.16    |0.6 |0.68|21.45      |
+|8I7N_N |0.22    |0.41|0.68|47.2       |
+|R1107  |0.22    |0.36|0.6 |19.47      |
+|R1108  |0.3     |0.47|0.73|9.5        |
+|R1116  |0.43    |0.65|0.34|15.3       |
+|R1117  |0.12    |0.2 |0.55|24.86      |
+|R1126  |0.18    |0.5 |0.79|157.12     |
+|R1128  |0.23    |0.69|0.87|12.63      |
+|R1136  |0.2     |0.49|0.77|52.37      |
+|R1149  |0.31    |0.61|0.83|16.15      |
+|R1156  |0.18    |0.44|0.67|27.26      |
+|R1189  |0.2     |0.49|0.68|11.24      |
+|R1190  |0.24    |0.54|0.69|11.24      |
+|       |        |    |    |           |
+|Mean   |0.22    |0.49|0.61|22.66      |

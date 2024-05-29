@@ -12,12 +12,19 @@ do
     
     #====================================================
     nativepath="../Data/Natives"
-    predpath="../Predictions/WithMSA"
+    native="Native/"$PDBID"_native.pdb"
     
     path=""
 
-    native="Native/"$PDBID"_native.pdb"
     prediction="Prediction/"$PDBID"_$toolname.pdb"
+
+    if [ "$toolname" != "RNAComposer" ]; then
+        predpath="../Predictions/WithMSA"
+        predfile=$predpath/$PDBID/$PDBID"_$toolname.pdb"
+    else
+        predpath="../Predictions/RNAComposer"
+        predfile=$predpath/$PDBID/$PDBID".pdb"
+    fi
 
     rm Native/*
     rm Prediction/*
@@ -30,10 +37,10 @@ do
     mkdir -p pdbs/references
     
     cp $nativepath/$PDBID"_native.pdb" $native
-    cp $predpath/$PDBID/$PDBID"_$toolname.pdb" $prediction
+    cp $predfile $prediction
 
     cp $nativepath/$PDBID"_native.pdb" pdbs/references
-    cp $predpath/$PDBID/$PDBID"_$toolname.pdb" pdbs/models
+    cp $predfile pdbs/models
 
     #TM-score calculation
     #====================================================
