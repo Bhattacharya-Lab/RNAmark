@@ -4,6 +4,8 @@ by Sumit Tarafder, Rahmatullah Roche, Debswapna Bhattacharya
 
 <a href="https://doi.org/10.5281/zenodo.12533828"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.12533828.svg" alt="DOI"></a>
 
+published in [Biology Methods and Protocols](https://doi.org/10.1093/biomethods/bpae047)
+
 ## RNAmark 
 **RNAmark** repository contains the materials related to our large scale study on five transformer based deep learning methods as well as one non deep learning based method for RNA 3D structure prediction: 
 - [DeepFoldRNA](https://github.com/robpearc/DeepFoldRNA/)
